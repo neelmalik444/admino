@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookie Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        border: 0;
+    }
+    
+    thead {
+        display: none;
+    }
+    
+    tbody, tr, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    tr {
+        margin-bottom: 15px;
+    }
+    
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 10px;
+    }
+}
+
+    </style>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Bookie Name</th>
+                    <th>Mobile Number</th>
+                    <th>Play</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>NEEL MALIK</td>
+                    <td>8989 444 143</td>
+                    <td><a href="https://wa.link/lsiu9k"><button>PLAY</button></a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>+91-0987654321</td>
+                    <td><a href="https://wa.me/+919992422078"><button>PLAY</button></a></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
