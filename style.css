@@ -531,4 +531,59 @@ hr{
                                     font-weight: 600;
                                     font-family:Montserrat, sans-serif;
                                 }
-                                                
+                                .satta-matka-block_strt_adsen1{
+                                    background-color:#fff;color: #000;font-size: 12px;border-radius: 0px;font-weight: bold; font-style: italic;
+                                    padding-bottom:10px;padding-top:10px;text-align:center;border:#FF0040 solid 2px;font-style:italic;margin-top:10px;margin-bottom:10px;
+                    
+                                }
+                                    .satta-matka-block_strt_adsen9{
+                                    background-color:#eee;color: #000;font-size: 18px;border-radius: 0px;font-weight: bold;
+                                    padding-bottom:10px;padding-top:10px;text-align:center;border:solid 2px #F00;border-radius: 3px;font-family:Montserrat, sans-serif;margin-top:10px;margin-bottom:10px; line-height: 24.4px; font-style:italic;
+                    
+                                }
+                                .satta-matka-block_strt_adsen2{
+                                    background-color:#fff;color: #000;font-size: 15px;border-radius: 0px;font-weight: bold;
+                                    padding-bottom:10px;padding-top:10px;text-align:center;border:#00CC00 solid 2px;font-family:Helvetica, monospace;margin-top:10px;margin-bottom:10px; font-style: italic; line-height:22.4px;
+                                    
+                    
+                                }
+                                .satta-matka-block_strt_footer{
+                                    background-color:#fff;color: #000;font-size: 12px;border-radius: 5px;font-weight: bold;
+                                    padding:10px;text-align:center;border:#9C002F solid 2px;font-family:Helvetica Neue;margin-top:10px;margin-bottom:10px;
+                    
+                                }
+                                .satta-matka-block_strt2{
+                                    background-color:#F83400;color: #fff;font-size: 30px;font-weight: bold;border-radius: 5px;
+                                    padding-bottom:15px;text-align:center;border:#FFB90C solid 2px;font-style:italic;font-family:Helvetica Neue;margin-top:10px;margin-bottom:10px;
+                    
+                                }
+                                .satta-matka-block_strt3{
+                                    background-color:#02577c;color: #fff;font-size: 30px;font-weight: bold;border-radius: 5px;padding-bottom: 15px;
+                                    text-align:center;border:#FFB90C solid 2px;font-style:italic;font-family:Helvetica Neue;margin-top:10px;margin-bottom:10px;
+                    
+                                }
+                                .satta-matka-block_strt4{
+                                    background-color:#fff;color: #000;font-size: 12px;
+                                    padding-bottom: 10px;text-align:center;border:#02577c solid 2px;font-style:italic;font-family:Montserrat, sans-serif;margin-bottom:10px; line-height: 20.4px;
+                    
+                                }
+                                .satta-matka-block_strt_all{
+                                    background-color:#fff;color: #000;font-size: 12px;border-radius: 0px;
+                                    padding-bottom: 10px;text-align:center;border: #b31f1f solid 5px;font-style:italic;font-family:Helvetica Neue;margin-top:10px;margin-bottom:10px;
+                    
+                                }
+                                .satta-matka-block_strt_login{
+                                    background-color:#fff;color: #000;font-size: 12px;border-radius: 5px;
+                                    padding-bottom: 10px;text-align:center;border:#560202 solid 2px;font-style:italic;font-family:Montserrat, sans-serif;margin-top:10px;margin-bottom:10px;
+                    
+                                }
+                                .satta-matka-block_strt_ex_zone{background-color:#fff;color: #000;font-size: 12px;border-radius: 5px;
+                                                                padding-bottom: 10px;text-align:center;border:#97002E solid 2px;font-style:italic;font-family:Montserrat, sans-serif;margin-top:10px;margin-bottom:10px;
+                                }
+                                .satta-matka-block_strt_all_zone{background-color:#fff;color: #000;font-size: 12px;border-radius: 5px;
+                                                                 padding-bottom: 10px;text-align:center;border:#372F2D solid 2px;font-style:italic;font-family:Montserrat, sans-serif;margin-top:10px;margin-bottom:10px;}
+                                .satta-matka-block_strt_gm_zone{
+                                    background-color:#fff;color: #000;font-size: 12px;border-radius: 5px;padding-bottom: 10px;
+                                    text-align:center;border:#700020 solid 2px;font-style:italic;font-family:Montserrat, sans-serif;margin-top:10px;margin-bottom:10px;
+                    
+                                }            
