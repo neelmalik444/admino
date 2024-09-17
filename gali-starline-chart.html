@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Starline Chart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed; /* Fixes column widths to prevent overflow */
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+            box-sizing: border-box; /* Ensures padding is included in total width */
+            overflow: hidden; /* Ensures content does not overflow */
+            text-overflow: ellipsis; /* Adds ellipsis for overflowed text */
+            white-space: nowrap; /* Prevents text from wrapping */
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .date-cell {
+            font-size: 1rem; /* Default font size for the date */
+            overflow: hidden; /* Ensures content does not overflow */
+            text-overflow: ellipsis; /* Adds ellipsis for overflowed text */
+            white-space: nowrap; /* Prevents text from wrapping */
+        }
+        td {
+            font-size: 0.875rem; /* Default font size for table data */
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Responsive adjustments for tablets and larger screens */
+        @media screen and (max-width: 1200px) {
+            th, td {
+                font-size: 0.875rem;
+                padding: 6px;
+            }
+            .date-cell {
+                font-size: 0.875rem;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            th, td {
+                font-size: 0.75rem;
+                padding: 5px;
+            }
+            .date-cell {
+                font-size: 0.75rem;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            th, td {
+                font-size: 0.625rem;
+                padding: 4px;
+            }
+            .date-cell {
+                font-size: 0.625rem;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            table {
+                display: block;
+                width: 100%;
+                overflow-x: auto; /* Enables horizontal scrolling for very small screens */
+            }
+            thead, tbody, tr, th, td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            th, td {
+                text-align: left;
+                position: relative;
+                padding: 5px;
+                border: none;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #4CAF50;
+                color: white;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+            td:before {
+                content: attr(data-label); /* Adds a label before each cell data */
+                font-weight: bold;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h2>Starline Chart for 17/09/2024</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>10:00 AM</th>
+            <th>11:00 AM</th>
+            <th>12:00 PM</th>
+            <th>01:00 PM</th>
+            <th>02:00 PM</th>
+            <th>03:00 PM</th>
+            <th>04:00 PM</th>
+            <th>05:00 PM</th>
+            <th>06:00 PM</th>
+            <th>07:00 PM</th>
+            <th>08:00 PM</th>
+            <th>09:00 PM</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="date-cell" data-label="Date">17/09/2024</td>
+            <td data-label="10:00 AM">12</td>
+            <td data-label="11:00 AM">23</td>
+            <td data-label="12:00 PM">34</td>
+            <td data-label="01:00 PM">39</td>
+            <td data-label="02:00 PM">45</td>
+            <td data-label="03:00 PM">56</td>
+            <td data-label="04:00 PM">67</td>
+            <td data-label="05:00 PM">68</td>
+            <td data-label="06:00 PM">44</td>
+            <td data-label="07:00 PM">76</td>
+            <td data-label="08:00 PM">89</td>
+            <td data-label="09:00 PM">77</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
