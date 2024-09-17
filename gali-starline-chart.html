@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Starline Chart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px; /* Ensure minimum width for the table */
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px; /* Default padding */
+            overflow: hidden; /* Prevent overflow */
+            text-overflow: ellipsis; /* Add ellipsis for overflow text */
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .date-cell {
+            font-size: 16px; /* Default font size for the date cell */
+            white-space: nowrap; /* Prevents text from wrapping */
+        }
+        td {
+            font-size: 14px; /* Default font size for other cells */
+            word-wrap: break-word; /* Allows long words to break and wrap to the next line */
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        /* Media queries for responsive adjustments */
+        @media screen and (max-width: 1200px) {
+            th, td {
+                font-size: 14px; /* Font size for screens between 1200px and 600px */
+                padding: 10px; /* Adjust padding */
+            }
+            .date-cell {
+                font-size: 14px; /* Adjust font size for date on screens between 1200px and 600px */
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            th, td {
+                font-size: 12px; /* Font size for screens between 600px and 200px */
+                padding: 8px; /* Adjust padding */
+            }
+            .date-cell {
+                font-size: 12px; /* Adjust font size for date on screens between 600px and 200px */
+            }
+        }
+
+        @media screen and (max-width: 200px) {
+            th, td {
+                font-size: 10px; /* Font size for screens smaller than 200px */
+                padding: 6px; /* Adjust padding */
+            }
+            .date-cell {
+                font-size: 10px; /* Adjust font size for date on screens smaller than 200px */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h2>Starline Chart for 17/09/2024</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>10:00 AM</th>
+            <th>11:00 AM</th>
+            <th>12:00 PM</th>
+            <th>01:00 PM</th>
+            <th>02:00 PM</th>
+            <th>03:00 PM</th>
+            <th>04:00 PM</th>
+            <th>05:00 PM</th>
+            <th>06:00 PM</th>
+            <th>07:00 PM</th>
+            <th>08:00 PM</th>
+            <th>09:00 PM</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="date-cell">17/09/2024</td>
+            <td>12</td>
+            <td>23</td>
+            <td>34</td>
+            <td>39</td>
+            <td>45</td>
+            <td>56</td>
+            <td>67</td>
+            <td>68</td>
+            <td>44</td>
+            <td>76</td>
+            <td>89</td>
+            <td>77</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
