@@ -12,6 +12,9 @@ body{
     width: auto;
     height: 60px;
 }
+h1{
+    margin-top: -100px;
+}
 
 /* Logo End */
 
@@ -26,6 +29,9 @@ body{
     .logo img{
         width: 100%;
         height: min-content;
+    }
+    h1{
+        margin-top: -100px;
     }
 }
 
@@ -67,6 +73,9 @@ body{
     .content p{
         text-align: justify;
         font-size: 12px;
+    }
+    h1{
+        margin-top: -100px;
     }
 }
 
