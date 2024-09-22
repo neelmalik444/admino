@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website Under Maintenance</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.maintenance-container {
+    text-align: center;
+    padding: 50px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.maintenance-container h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.maintenance-container p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.gear-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gear {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+    position: relative;
+    margin: 0 10px;
+    animation: rotate 2s linear infinite;
+}
+
+.gear::before, .gear::after {
+    content: "";
+    position: absolute;
+    background-color: #333;
+}
+
+.gear::before {
+    width: 10px;
+    height: 50px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gear::after {
+    width: 50px;
+    height: 10px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Customize each gear's rotation speed */
+.gear-one {
+    animation-duration: 1.5s;
+}
+
+.gear-two {
+    animation-duration: 2s;
+}
+
+.gear-three {
+    animation-duration: 2.5s;
+}
+
+#countdown {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+</style>
+<script>
+    let timeLeft = 30; // time in seconds
+
+function updateCountdown() {
+    const countdownEl = document.getElementById('time');
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    countdownEl.innerHTML = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    timeLeft--;
+
+    if (timeLeft >= 0) {
+        setTimeout(updateCountdown, 1000);
+    } else {
+        document.getElementById('countdown').innerHTML = "Maintenance Completed!";
+    }
+}
+
+updateCountdown();
+
+</script>
+<body>
+    <div class="maintenance-container">
+        <div class="gear-wrapper">
+            <div class="gear gear-one"></div>
+            <div class="gear gear-two"></div>
+            <div class="gear gear-three"></div>
+        </div>
+        <h1>We are currently under maintenance!</h1>
+        <p>Our website is undergoing scheduled maintenance. We will be back shortly.</p>
+        <p id="countdown">Estimated Time Remaining: <span id="time">02:00</span></p>
+        <p>Regards Sattamarket.mobi</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
