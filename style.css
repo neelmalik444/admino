@@ -609,3 +609,9 @@ hr{
                                     color: rgb(232, 17, 240);
                                     text-shadow: 2px 2px 3px pink;
                                 }
+
+                                .pass{
+                                    border: solid 2px red;
+                                    text-align: center;
+                                    justify-content: center;
+                                }
