@@ -594,3 +594,18 @@ hr{
                                     text-align:center;border:#700020 solid 2px;font-style:italic;font-family:Montserrat, sans-serif;margin-top:10px;margin-bottom:10px;
                     
                                 }            
+
+                                /* Market Guessing Css Start */
+
+                                .mnop{
+                                    font-weight: bold;
+                                    font-family: monospace;
+                                    color: red;
+                                    text-shadow: 2px 2px 2px black;
+                                }
+
+                                .qqr{
+                                    font-weight: bold;
+                                    color: rgb(232, 17, 240);
+                                    text-shadow: 2px 2px 3px pink;
+                                }
